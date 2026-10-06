@@ -15,7 +15,7 @@ public class StudentMember extends  Member{
     }
 
     @Override
-    public double calculateGrade(int overDueDays) {
+    public double calculateFees(int overDueDays) {
         return (overDueDays* studentDailyFee);
     }
 }

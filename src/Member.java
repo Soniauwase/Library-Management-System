@@ -5,13 +5,11 @@ public  abstract class Member {
     private String member_id;
     private String member_category;
     private String contact_info;
-    private List<Book> borrowedBooks;
 
     public Member(String member_id, String member_category, String contact_info) {
         this.member_id = member_id;
         this.member_category = member_category;
         this.contact_info = contact_info;
-        this.borrowedBooks = new ArrayList<>();
     }
 
     public String getMember_id() {
@@ -48,6 +46,6 @@ public  abstract class Member {
 
 
     }
-     public  abstract  double calculateGrade( int overDueDays);
+     public  abstract  double calculateFees( int overDueDays);
 }
 

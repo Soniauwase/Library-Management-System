@@ -5,7 +5,7 @@ public class LibrarianMember extends Member {
         }
 
     @Override
-    public double calculateGrade(int overDueDays) {
+    public double calculateFees(int overDueDays) {
         return 0.0;
     }
     }
